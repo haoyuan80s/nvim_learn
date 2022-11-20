@@ -4,6 +4,7 @@ local M = {}
 
 -- TODO: In this function replace `module-template` with the actual name of your module.
 function M.init()
+  -- print("Initializing module-template")
   require "nvim-treesitter".define_modules {
     module_template = {
       module_path = "module-template.internal",
@@ -14,5 +15,10 @@ function M.init()
     }
   }
 end
+
+-- --
+-- M.test = function()
+--   print("Hello world")
+-- end
 
 return M
